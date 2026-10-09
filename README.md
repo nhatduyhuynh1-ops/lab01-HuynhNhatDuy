@@ -4,13 +4,9 @@ A starter repository for the CSC10014 Smart Virtual Assistant project.
 
 ## Setup
 
-Follow these steps on a fresh machine.
-
 ### 1. Install prerequisites
 
-* Install Git.
-* Install Python 3.
-* Verify the installations:
+Install Git and Python 3.10 or later. Verify the installations:
 
 ```bash
 git --version
@@ -24,45 +20,39 @@ git clone git@github.com:nhatduyhuynh1-ops/lab01-HuynhNhatDuy.git
 cd lab01-HuynhNhatDuy
 ```
 
-### 3. Create a virtual environment
+### 3. Create and activate a virtual environment
+
+Windows — Git Bash:
 
 ```bash
 python -m venv .venv
-```
-
-### 4. Activate the virtual environment
-
-**Windows — Git Bash:**
-
-```bash
 source .venv/Scripts/activate
 ```
 
-**Windows — PowerShell:**
+Windows — PowerShell:
 
 ```powershell
+python -m venv .venv
 .venv\Scripts\Activate.ps1
 ```
 
-**Linux/macOS:**
+Linux/macOS:
 
 ```bash
+python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-### 5. Install dependencies
-
-If the repository contains `requirements.txt`, run:
+### 4. Install dependencies
 
 ```bash
+python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
 
-If no dependency file exists, install the required packages as specified by the project.
-
 ## Run
 
-Activate the virtual environment, then run the application:
+With the virtual environment activated, start the application:
 
 ```bash
 python main.py
@@ -70,7 +60,7 @@ python main.py
 
 ## Test
 
-Run the automated tests with pytest:
+Run the automated tests:
 
 ```bash
 python -m pytest
@@ -87,9 +77,10 @@ lab01-HuynhNhatDuy/
 └── tests/
 ```
 
-* `.gitignore` specifies files and directories Git should ignore, including `.venv/`.
-* `README.md` contains setup, run, and test instructions.
+* `.gitignore` excludes files and directories that should not be tracked, including `.venv/`.
+* `README.md` documents setup, execution, and testing.
 * `requirements.txt` lists Python dependencies.
 * `main.py` is the application entry point.
 * `tests/` contains automated tests.
-* `.venv/` is created locally during setup and is not tracked by Git.
+
+The `.venv/` directory is generated locally and should not be committed to Git.
