@@ -4,14 +4,6 @@ A starter repository for the CSC10014 Smart Virtual Assistant project.
 
 ## Setup
 
-TODO (Lab 1): write the exact steps a new teammate needs, from a fresh machine to
-running the app and the tests. Your partner will follow them without your help.
-# Study Assistant — starter
-
-A starter repository for the CSC10014 Smart Virtual Assistant project.
-
-## Setup
-
 Follow these steps on a fresh machine.
 
 ### 1. Install prerequisites
@@ -101,15 +93,3 @@ lab01-HuynhNhatDuy/
 ```
 
 The structure above is illustrative. Update it to reflect the actual repository files.
-
-## Run
-
-TODO
-
-## Test
-
-TODO
-
-## Project structure
-
-TODO
